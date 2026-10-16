@@ -5,7 +5,7 @@ function createBot() {
         host: 'TrDonutNW.aternos.me', // Buraya Kendi Aternos IP'nizi yazın!
         port: 25565, // Eğer özel bir portunuz varsa değiştirin, yoksa aynen kalsın
         username: '724_AFK_Bot', // Botun oyundaki adı
-        version: false // Sunucu sürümünü otomatik algılar
+        version: 1.21.11 // Sunucu sürümünü otomatik algılar
     });
 
     bot.on('spawn', () => {
