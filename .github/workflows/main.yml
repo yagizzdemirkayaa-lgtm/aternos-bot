@@ -15,7 +15,8 @@ jobs:
     - name: Node.js Kur
       uses: actions/setup-node@v3
       with:
-        node-node-version: 18
+        # DOĞRU OLAN SATIR:
+node-version: 18
 
     - name: Gerekli Modülleri Yükle
       run: npm install mineflayer
