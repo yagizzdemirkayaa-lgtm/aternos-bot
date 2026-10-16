@@ -3,23 +3,22 @@ name: Aternos 7/24 Bot
 on:
   push:
     branches: [ main ]
-  workflow_dispatch: # Manuel olarak da başlatabilmek için
+  workflow_dispatch:
 
 jobs:
   run-bot:
     runs-on: ubuntu-latest
     steps:
-    - name: Kodları Çek
-      uses: actions/checkout@v3
+    - name: Kodlari Cek
+      uses: actions/checkout@v4
 
     - name: Node.js Kur
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4
       with:
-        # DOĞRU OLAN SATIR:
-node-version: 18
+        node-version: 18
 
-    - name: Gerekli Modülleri Yükle
+    - name: Gerekli Modulleri Yukle
       run: npm install mineflayer
 
-    - name: Botu Başlat
+    - name: Botu Baslat
       run: node bot.js
